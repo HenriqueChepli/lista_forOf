@@ -7,12 +7,16 @@
 
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
-    
-
-    //PROCESSAMENTO
     let masculino = [];
     let feminino = [];
 
+    //PROCESSAMENTO
+    for (const nomes of listaDeNomes) {
+        const sexo = prompt(`${nomes} É masculino ou feminino? ( M - F)`).toUpperCase();
+        (sexo == "M") ? masculino.push(nomes) : feminino.push(nomes);
+    }
+
     //SAÍDA
+    alert(`${masculino.join(", ")} e a lista Feminina é ${feminino.join(", ")}`);
 
 </script>
