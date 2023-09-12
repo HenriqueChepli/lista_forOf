@@ -7,10 +7,16 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    let inteiros = [];
 
     //PROCESSAMENTO
-
+    for(let inteiro of listaDeNumeros){
+        if(inteiro > 0 && Number.isInteger(inteiro)){
+            inteiros.push(inteiro)
+        }
+    }
 
     //SAÍDA
+    alert(`${inteiros} e ${inteiros.length} `)
 
 </script>

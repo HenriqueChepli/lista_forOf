@@ -7,9 +7,16 @@
 
     //ENTRADA
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let vogais = [];
 
     //PROCESSAMENTO
+    for(let nomes of listaDeNomes){
+        if(nomes.startsWith("A") || nomes.startsWith("E") || nomes.startsWith("I") || nomes.startsWith("O") || nomes.startsWith("U")){
+            vogais.push(nomes)
+        }
+    }
 
     //SAÍDA
+    alert(`Os nomes que começam com vogais são: ${vogais.sort()}`);
 
 </script>
